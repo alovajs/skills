@@ -1,0 +1,23 @@
+{
+  "name": "alova-skills",
+  "version": "1.0.0",
+  "description": "AI agent skills for alovajs",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alova",
+    "skills",
+    "agent-skills"
+  ],
+  "author": "Scott Hu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alovajs/skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alovajs/skills/issues"
+  }
+}
