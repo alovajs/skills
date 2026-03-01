@@ -16,6 +16,7 @@ pnpm add @alova/wormhole -D
 ## VSCode extension (optional)
 
 Search **"alova"** in the VSCode Extensions marketplace and install it. Provides:
+
 - In-editor API documentation
 - Quick navigation to interfaces
 - Visual parameter and response structure preview

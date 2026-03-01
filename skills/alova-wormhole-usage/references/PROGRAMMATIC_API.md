@@ -23,7 +23,7 @@ import { readConfig, generate } from '@alova/wormhole';
 
 const config = await readConfig();
 const results = await generate(config, {
-  force: false,        // skip update check
+  force: false, // skip update check
   projectPath: './',
 });
 // results: boolean[] — true if each generator succeeded

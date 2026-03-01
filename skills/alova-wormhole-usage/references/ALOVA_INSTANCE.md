@@ -4,11 +4,11 @@ After running `alova gen`, edit `${output}/index.[js/ts]` to configure your alov
 
 ## Key exports from `createApis`
 
-| Export | Purpose |
-|---|---|
-| `createApis(instance, configMap)` | Create the `Apis` object |
-| `withConfigType(map)` | Define reusable per-method config |
-| `mountApis(Apis)` | Mount `Apis` globally (optional) |
+| Export                            | Purpose                           |
+| --------------------------------- | --------------------------------- |
+| `createApis(instance, configMap)` | Create the `Apis` object          |
+| `withConfigType(map)`             | Define reusable per-method config |
+| `mountApis(Apis)`                 | Mount `Apis` globally (optional)  |
 
 ## Minimal example
 
@@ -21,7 +21,7 @@ import { createApis, withConfigType, mountApis } from './createApis';
 export const alovaInstance = createAlova({
   baseURL: 'https://your-api-server.com',
   requestAdapter: GlobalFetch(),
-  responded: res => res.json(),
+  responded: (res) => res.json(),
 });
 
 export const $$userConfigMap = withConfigType({});
@@ -36,7 +36,7 @@ export default Apis;
 export const alovaInstance = createAlova({
   baseURL: 'https://your-api-server.com',
   requestAdapter: GlobalFetch(),
-  beforeRequest: method => {
+  beforeRequest: (method) => {
     method.config.headers['Authorization'] = `Bearer ${getToken()}`;
   },
   responded: {
