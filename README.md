@@ -4,39 +4,39 @@ A collection of AI agent skills for [alova](https://alova.js.org/). designed to 
 
 ## Included Skills
 
-### 1. `client-usage`
+### alova-client-usage
 
 Best practices for alova v3 in browser/client-side/SSR applications.
 
 ```bash
-npx skills add alovajs/skills --skill client-usage
+npx skills add alovajs/skills --skill alova-client-usage
 ```
 
-### 2. `server-usage`
+### alova-server-usage
 
 Best practices for alova v3 in server-side environments.
 
 ```bash
-npx skills add alovajs/skills --skill server-usage
+npx skills add alovajs/skills --skill alova-server-usage
 ```
 
-### 3. `wormhole-usage`
+### alova-wormhole-usage
 
 Guide for integrating alova with OpenAPI/Swagger specs via `@alova/wormhole`.
 
 ```bash
-npx skills add alovajs/skills --skill wormhole-usage
+npx skills add alovajs/skills --skill alova-wormhole-usage
 ```
 
 ### For AI Agent Users
 
 Skills are automatically triggered when:
 
-| Skill | Trigger Keywords |
-|-------|------------------|
-| `client-usage` | API requests, fetch data, alova client setup, `alova/client` imports, pagination, forms |
-| `server-usage` | Server-side requests, BFF, API gateway, Node.js/Bun/Deno, `alova/server` imports, Redis caching |
-| `wormhole-usage` | OpenAPI, Swagger, `@alova/wormhole`, API code generation, `alova gen`, `alova init` |
+| Skill                | Trigger Keywords                                                                                |
+| -------------------- | ----------------------------------------------------------------------------------------------- |
+| alova-client-usage   | API requests, fetch data, alova client setup, `alova/client` imports, pagination, forms         |
+| alova-server-usage   | Server-side requests, BFF, API gateway, Node.js/Bun/Deno, `alova/server` imports, Redis caching |
+| alova-wormhole-usage | OpenAPI, Swagger, `@alova/wormhole`, API code generation, `alova gen`, `alova init`             |
 
 ## License
 
