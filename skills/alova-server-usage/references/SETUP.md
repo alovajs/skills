@@ -16,18 +16,18 @@ the following is `AlovaOptions` schame.
 
 | Name           | Type                        | Description                                                                                                                                |
 | -------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| requestAdapter | object                      | Request adapter, required, [For Detail](https://alova.js.org/tutorial/advanced/custom/http-adapter)                                        |
-| id             | string \| number            | Alova instance id, optional, [For Detail](https://alova.js.org/tutorial/cache/mode#set-alova-id)                                           |
-| baseURL        | string                      | Base path, optional, default is empty, [For Detail](https://alova.js.org/tutorial/getting-started/basic/alova)                             |
-| timeout        | number                      | Timeout, default is no timeout, [For Detail](https://alova.js.org/tutorial/getting-started/basic/alova)                                    |
-| cacheFor       | object                      | Local cache configuration, default GET has 5000ms cache, [For Detail](https://alova.js.org/tutorial/cache/mode)                            |
-| l1Cache        | object                      | Level1 cache adapter [For Detail](https://alova.js.org/tutorial/cache/mode)                                                                |
-| l2Cache        | object                      | Level2 cache adapter, [For Detail](https://alova.js.org/tutorial/cache/mode)                                                               |
-| beforeRequest  | function                    | Before request hook, [For Detail](https://alova.js.org/tutorial/getting-started/basic/global-interceptor)                                  |
-| responded      | object \| function          | Request response hook, [For Detail](https://alova.js.org/tutorial/getting-started/basic/global-interceptor)                                |
-| shareRequest   | boolean                     | Share request, [For Detail](https://alova.js.org/tutorial/getting-started/basic/alova)                                                     |
-| cacheLogger    | boolean \| null \| function | Cache log, [For Detail](https://alova.js.org/tutorial/advanced/in-depth/cache-logger)                                                      |
-| snapshots      | number                      | method The number of snapshots is limited, the default is 1000, [For Detail](https://alova.js.org/tutorial/client/in-depth/method-matcher) |
+| requestAdapter | object                      | Request adapter, required, [For Detail](https://alova.js.org/tutorial/advanced/custom/http-adapter.md)                                        |
+| id             | string \| number            | Alova instance id, optional, [For Detail](https://alova.js.org/tutorial/cache/mode.md#set-alova-id)                                           |
+| baseURL        | string                      | Base path, optional, default is empty, [For Detail](https://alova.js.org/tutorial/getting-started/basic/alova.md)                             |
+| timeout        | number                      | Timeout, default is no timeout, [For Detail](https://alova.js.org/tutorial/getting-started/basic/alova.md)                                    |
+| cacheFor       | object                      | Local cache configuration, default GET has 5000ms cache, [For Detail](https://alova.js.org/tutorial/cache/mode.md)                            |
+| l1Cache        | object                      | Level1 cache adapter [For Detail](https://alova.js.org/tutorial/cache/mode.md)                                                                |
+| l2Cache        | object                      | Level2 cache adapter, [For Detail](https://alova.js.org/tutorial/cache/mode.md)                                                               |
+| beforeRequest  | function                    | Before request hook, [For Detail](https://alova.js.org/tutorial/getting-started/basic/global-interceptor.md)                                  |
+| responded      | object \| function          | Request response hook, [For Detail](https://alova.js.org/tutorial/getting-started/basic/global-interceptor.md)                                |
+| shareRequest   | boolean                     | Share request, [For Detail](https://alova.js.org/tutorial/getting-started/basic/alova.md)                                                     |
+| cacheLogger    | boolean \| null \| function | Cache log, [For Detail](https://alova.js.org/tutorial/advanced/in-depth/cache-logger.md)                                                      |
+| snapshots      | number                      | method The number of snapshots is limited, the default is 1000, [For Detail](https://alova.js.org/tutorial/client/in-depth/method-matcher.md) |
 
 ### Example
 

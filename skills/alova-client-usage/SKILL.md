@@ -84,11 +84,11 @@ try {
 }
 ```
 
-See [Method Documentation](https://alova.js.org/api/method) if need to know full method instance API.
+See [Method Documentation](https://alova.js.org/api/method.md) if need to know full method instance API.
 
 ### Method Metadata
 
-Add additional information to specific method instances to facilitate their identification or additional information in global interceptor such as different response returning, global toast avoiding. please set method metadata. See -> [Method Metadata](https://alova.js.org/tutorial/getting-started/basic/method-metadata).
+Add additional information to specific method instances to facilitate their identification or additional information in global interceptor such as different response returning, global toast avoiding. please set method metadata. See -> [Method Metadata](https://alova.js.org/tutorial/getting-started/basic/method-metadata.md).
 
 ## Core Hooks
 
@@ -96,28 +96,28 @@ Use these hooks in components instead of hand-rolling common request patterns.
 
 > import from `alova/client`.
 
-| Hook         | When to use                                                                                   | Docs                                                               |
-| ------------ | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| `useRequest` | Fetch on mount, or trigger once on a user action (button click, form submit)                  | [Docs](https://alova.js.org/tutorial/client/strategy/use-request/) |
-| `useWatcher` | Re-fetch automatically when reactive state changes (search input, filter, tab, page)          | [Docs](https://alova.js.org/tutorial/client/strategy/use-watcher/) |
-| `useFetcher` | Preload data silently in background, or refresh from outside the component that owns the data | [Docs](https://alova.js.org/tutorial/client/strategy/use-fetcher/) |
+| Hook         | When to use                                                                                   | Docs                                                                 |
+| ------------ | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| `useRequest` | Fetch on mount, or trigger once on a user action (button click, form submit)                  | [Docs](https://alova.js.org/tutorial/client/strategy/use-request.md) |
+| `useWatcher` | Re-fetch automatically when reactive state changes (search input, filter, tab, page)          | [Docs](https://alova.js.org/tutorial/client/strategy/use-watcher.md) |
+| `useFetcher` | Preload data silently in background, or refresh from outside the component that owns the data | [Docs](https://alova.js.org/tutorial/client/strategy/use-fetcher.md) |
 
 ## Business Strategy Hooks
 
 > import from `alova/client`.
 
-| Scenario                                      | Hook                                          | Key capability                                                            | Docs                                                                                |
-| --------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Paginated list / infinite scroll              | `usePagination`                               | Auto page management, preload next/prev, optimistic insert/remove/replace | [Docs](https://alova.js.org/tutorial/client/strategy/use-pagination/)               |
-| Form submit (any complexity)                  | `useForm`                                     | Draft persistence, multi-step state sharing, auto-reset                   | [Docs](https://alova.js.org/tutorial/client/strategy/use-form/)                     |
-| Polling / focus / reconnect refresh           | `useAutoRequest`                              | Configurable triggers, throttle                                           | [Docs](https://alova.js.org/tutorial/client/strategy/use-auto-request/)             |
-| Sms, email verification code send + countdown | `useCaptcha`                                  | Cooldown timer built-in                                                   | [Docs](https://alova.js.org/tutorial/client/strategy/use-captcha/)                  |
-| Cross-component request trigger               | `actionDelegationMiddleware` + `accessAction` | No prop-drilling or global store                                          | [Docs](https://alova.js.org/tutorial/client/strategy/action-delegation-middleware/) |
-| Chained dependent requests                    | `useSerialRequest` / `useSerialWatcher`       | Each step receives previous result                                        | [Docs](https://alova.js.org/tutorial/client/strategy/use-serial-request/)           |
-| Retry with exponential backoff                | `useRetriableRequest`                         | Configurable attempts + jitter                                            | [Docs](https://alova.js.org/tutorial/client/strategy/use-retriable-request/)        |
-| File upload with progress                     | `useUploader`                                 | Concurrent limit, progress events                                         | [Docs](https://alova.js.org/tutorial/client/strategy/use-uploader/)                 |
-| Server-Sent Events                            | `useSSE`                                      | Reactive `data` + `readyState`                                            | [Docs](https://alova.js.org/tutorial/client/strategy/use-sse/)                      |
-| Seamless data interaction                     | `useSQRequest`                                | interact with UI can be responded immediately without waiting             | [Docs](https://alova.js.org/tutorial/client/strategy/seamless-data-interaction)     |
+| Scenario                                      | Hook                                          | Key capability                                                            | Docs                                                                                  |
+| --------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Paginated list / infinite scroll              | `usePagination`                               | Auto page management, preload next/prev, optimistic insert/remove/replace | [Docs](https://alova.js.org/tutorial/client/strategy/use-pagination.md)               |
+| Form submit (any complexity)                  | `useForm`                                     | Draft persistence, multi-step state sharing, auto-reset                   | [Docs](https://alova.js.org/tutorial/client/strategy/use-form.md)                     |
+| Polling / focus / reconnect refresh           | `useAutoRequest`                              | Configurable triggers, throttle                                           | [Docs](https://alova.js.org/tutorial/client/strategy/use-auto-request.md)             |
+| Sms, email verification code send + countdown | `useCaptcha`                                  | Cooldown timer built-in                                                   | [Docs](https://alova.js.org/tutorial/client/strategy/use-captcha.md)                  |
+| Cross-component request trigger               | `actionDelegationMiddleware` + `accessAction` | No prop-drilling or global store                                          | [Docs](https://alova.js.org/tutorial/client/strategy/action-delegation-middleware.md) |
+| Chained dependent requests                    | `useSerialRequest` / `useSerialWatcher`       | Each step receives previous result                                        | [Docs](https://alova.js.org/tutorial/client/strategy/use-serial-request.md)           |
+| Retry with exponential backoff                | `useRetriableRequest`                         | Configurable attempts + jitter                                            | [Docs](https://alova.js.org/tutorial/client/strategy/use-retriable-request.md)        |
+| File upload with progress                     | `useUploader`                                 | Concurrent limit, progress events                                         | [Docs](https://alova.js.org/tutorial/client/strategy/use-uploader.md)                 |
+| Server-Sent Events                            | `useSSE`                                      | Reactive `data` + `readyState`                                            | [Docs](https://alova.js.org/tutorial/client/strategy/use-sse.md)                      |
+| Seamless data interaction                     | `useSQRequest`                                | interact with UI can be responded immediately without waiting             | [Docs](https://alova.js.org/tutorial/client/strategy/seamless-data-interaction.md)    |
 
 ## Cache Strategy
 
@@ -125,10 +125,10 @@ Alova has L1 (memory) and L2 (persistent/restore) layers, plus automatic request
 
 ### Set cache globally and scoped
 
-- Fast in-page access, resets on refresh, Survive page refresh / offline-first, disable cache -> See [Cache mode](https://alova.js.org/tutorial/cache/mode).
-- Auto-invalidate after a mutation, `hitSource` on GET + `name` on mutation Method -> See [Auto Invalidate Cache](https://alova.js.org/tutorial/cache/auto-invalidate).
-- Manual invalidate -> See [Manual invalidate](https://alova.js.org/tutorial/cache/manually-invalidate).
-- Set & Query cache -> See [Operate Cache](https://alova.js.org/tutorial/cache/set-and-query).
+- Fast in-page access, resets on refresh, Survive page refresh / offline-first, disable cache -> See [Cache mode](https://alova.js.org/tutorial/cache/mode.md).
+- Auto-invalidate after a mutation, `hitSource` on GET + `name` on mutation Method -> See [Auto Invalidate Cache](https://alova.js.org/tutorial/cache/auto-invalidate.md).
+- Manual invalidate -> See [Manual invalidate](https://alova.js.org/tutorial/cache/manually-invalidate.md).
+- Set & Query cache -> See [Operate Cache](https://alova.js.org/tutorial/cache/set-and-query.md).
 
 **Key rule**: prefer `hitSource` auto-invalidation — it requires zero imperative code and decouples components.
 
@@ -145,11 +145,11 @@ Middleware allows you to intercept and control request behavior in useHooks. Com
 - Implementing request retry logic
 - Taking full control of loading state
 
-For full middleware API and examples, see [Request Middleware](https://alova.js.org/tutorial/client/in-depth/middleware).
+For full middleware API and examples, see [Request Middleware](https://alova.js.org/tutorial/client/in-depth/middleware.md).
 
 ## Mock Request
 
-Setup mock data for specific requests. See [Mock Request](https://alova.js.org/resource/request-adapter/alova-mock).
+Setup mock data for specific requests. See [Mock Request](https://alova.js.org/resource/request-adapter/alova-mock.md).
 
 ## Best Practices
 
@@ -187,7 +187,7 @@ const getUser = (id: number) =>
 const { data } = useRequest(getUser(1)); // data: Ref<User>
 ```
 
-📄 [TypeScript docs](https://alova.js.org/tutorial/advanced/in-depth/typescript)
+📄 [TypeScript docs](https://alova.js.org/tutorial/advanced/in-depth/typescript.md)
 
 ## SSR Component Party
 
@@ -240,10 +240,10 @@ export async function load({ params }) {
 
 If all preset adapters not meet your needs, custom your own adapter.
 
-- [Custom Request Adapter](https://alova.js.org/tutorial/advanced/custom/http-adapter)
-- [Custom Storage Adapter](https://alova.js.org/tutorial/advanced/custom/storage-adapter)
-- [Custom Client Strategy Hook](https://alova.js.org/tutorial/advanced/custom/client-strategy)
+- [Custom Request Adapter](https://alova.js.org/tutorial/advanced/custom/http-adapter.md)
+- [Custom Storage Adapter](https://alova.js.org/tutorial/advanced/custom/storage-adapter.md)
+- [Custom Client Strategy Hook](https://alova.js.org/tutorial/advanced/custom/client-strategy.md)
 
 ## Custom Method Key
 
-Change cache, request sharing and state updating matching strategy by setting `key`. See [Custom Method Key](https://alova.js.org/tutorial/advanced/in-depth/custom-method-key).
+Change cache, request sharing and state updating matching strategy by setting `key`. See [Custom Method Key](https://alova.js.org/tutorial/advanced/in-depth/custom-method-key.md).

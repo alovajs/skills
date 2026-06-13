@@ -83,12 +83,12 @@ export default defineConfig({
 
 | Plugin            | Description                                                             | Documentation                                                          |
 | ----------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| `rename`          | Rename API functions and parameter names, supports camelCase/snake_case | [Docs](https://alova.js.org/resource/devtool-plugins/rename)           |
-| `tagModifier`     | Modify API tag names                                                    | [Docs](https://alova.js.org/resource/devtool-plugins/tag-modifier)     |
-| `payloadModifier` | Add/remove/modify API parameter types                                   | [Docs](https://alova.js.org/resource/devtool-plugins/payload-modifier) |
-| `filterApi`       | Filter APIs by URL and tag matching                                     | [Docs](https://alova.js.org/resource/devtool-plugins/filter-api)       |
-| `apifox`          | Auto-import Apifox projects                                             | [Docs](https://alova.js.org/resource/devtool-plugins/apifox)           |
-| `importType`      | Exclude types that need customization                                   | [Docs](https://alova.js.org/resource/devtool-plugins/import-type)      |
+| `rename`          | Rename API functions and parameter names, supports camelCase/snake_case | [Docs](https://alova.js.org/resource/devtool-plugins/rename.md)           |
+| `tagModifier`     | Modify API tag names                                                    | [Docs](https://alova.js.org/resource/devtool-plugins/tag-modifier.md)     |
+| `payloadModifier` | Add/remove/modify API parameter types                                   | [Docs](https://alova.js.org/resource/devtool-plugins/payload-modifier.md) |
+| `filterApi`       | Filter APIs by URL and tag matching                                     | [Docs](https://alova.js.org/resource/devtool-plugins/filter-api.md)       |
+| `apifox`          | Auto-import Apifox projects                                             | [Docs](https://alova.js.org/resource/devtool-plugins/apifox.md)           |
+| `importType`      | Exclude types that need customization                                   | [Docs](https://alova.js.org/resource/devtool-plugins/import-type.md)      |
 
 **Usage Example**:
 

@@ -81,11 +81,11 @@ try {
 alovaInstance.Get('/api/user').send();
 ```
 
-See [Method Documentation](https://alova.js.org/api/method) if need to know full method instance API.
+See [Method Documentation](https://alova.js.org/api/method.md) if need to know full method instance API.
 
 ### Method Metadata
 
-Add additional information to specific method instances to facilitate their identification or additional information in global interceptor such as different response returning, global toast avoiding. please set method metadata. See -> [Method Metadata](https://alova.js.org/tutorial/getting-started/basic/method-metadata).
+Add additional information to specific method instances to facilitate their identification or additional information in global interceptor such as different response returning, global toast avoiding. please set method metadata. See -> [Method Metadata](https://alova.js.org/tutorial/getting-started/basic/method-metadata.md).
 
 ## Cache Strategy
 
@@ -93,10 +93,10 @@ Alova has L1 (memory) and L2 (persistent/restore) layers, plus automatic request
 
 ### Set cache globally and scoped
 
-- Fast in-page access, resets on refresh, Survive page refresh / offline-first, disable cache -> See [Cache mode](https://alova.js.org/tutorial/cache/mode).
-- Auto-invalidate after a mutation, `hitSource` on GET + `name` on mutation Method -> See [Auto Invalidate Cache](https://alova.js.org/tutorial/cache/auto-invalidate).
-- Manual invalidate -> See [Manual invalidate](https://alova.js.org/tutorial/cache/manually-invalidate).
-- Set & Query cache -> See [Operate Cache](https://alova.js.org/tutorial/cache/set-and-query).
+- Fast in-page access, resets on refresh, Survive page refresh / offline-first, disable cache -> See [Cache mode](https://alova.js.org/tutorial/cache/mode.md).
+- Auto-invalidate after a mutation, `hitSource` on GET + `name` on mutation Method -> See [Auto Invalidate Cache](https://alova.js.org/tutorial/cache/auto-invalidate.md).
+- Manual invalidate -> See [Manual invalidate](https://alova.js.org/tutorial/cache/manually-invalidate.md).
+- Set & Query cache -> See [Operate Cache](https://alova.js.org/tutorial/cache/set-and-query.md).
 
 **Key rule**: prefer `hitSource` auto-invalidation — it requires zero imperative code and decouples components.
 
@@ -108,10 +108,10 @@ Server hooks wrap a Method instance and return a new hooked Method. They are **c
 
 | Scenario                                       | Hook          | Key capability                                       | Docs                                                                |
 | ---------------------------------------------- | ------------- | ---------------------------------------------------- | ------------------------------------------------------------------- |
-| Retry failed requests with backoff             | `retry`       | Configurable retry attempts with exponential backoff | [Docs](https://alova.js.org/tutorial/server/strategy/retry/)        |
-| Distributed captcha sending                    | `sendCaptcha` | Built-in rate limiting for captcha                   | [Docs](https://alova.js.org/tutorial/server/strategy/send-captcha/) |
-| Rate-limit outgoing requests                   | `RateLimiter` | Token bucket algorithm, cluster support via Redis    | [Docs](https://alova.js.org/tutorial/server/strategy/rate-limit/)   |
-| Only one process initiates at a time (cluster) | `atomize`     | Distributed lock for token refresh, resource init    | [Docs](https://alova.js.org/tutorial/server/strategy/atomize/)      |
+| Retry failed requests with backoff             | `retry`       | Configurable retry attempts with exponential backoff | [Docs](https://alova.js.org/tutorial/server/strategy/retry.md)        |
+| Distributed captcha sending                    | `sendCaptcha` | Built-in rate limiting for captcha                   | [Docs](https://alova.js.org/tutorial/server/strategy/send-captcha.md) |
+| Rate-limit outgoing requests                   | `RateLimiter` | Token bucket algorithm, cluster support via Redis    | [Docs](https://alova.js.org/tutorial/server/strategy/rate-limit.md)   |
+| Only one process initiates at a time (cluster) | `atomize`     | Distributed lock for token refresh, resource init    | [Docs](https://alova.js.org/tutorial/server/strategy/atomize.md)      |
 
 Server hooks can be layered one on top of another to combine their behaviors:
 
@@ -145,7 +145,7 @@ const result = await retry(limiter.limit(alovaInstance.Post('/api/order', data))
 
 ## Mock Request
 
-Setup mock data for specific requests. See [Mock Request](https://alova.js.org/resource/request-adapter/alova-mock).
+Setup mock data for specific requests. See [Mock Request](https://alova.js.org/resource/request-adapter/alova-mock.md).
 
 ## Best Practices
 
@@ -180,16 +180,16 @@ const getUser = (id: number) =>
 const { data } = useRequest(getUser(1)); // data: Ref<User>
 ```
 
-📄 [TypeScript docs](https://alova.js.org/tutorial/client/typescript/)
+📄 [TypeScript docs](https://alova.js.org/tutorial/client/typescript.md)
 
 ## Custom Adapter
 
 If all preset adapters not meet your needs, custom your own adapter.
 
-- [Custom Request Adapter](https://alova.js.org/tutorial/advanced/custom/http-adapter)
-- [Custom Storage Adapter](https://alova.js.org/tutorial/advanced/custom/storage-adapter)
-- [Custom Server Strategy Hook](https://alova.js.org/tutorial/advanced/custom/server-strategy)
+- [Custom Request Adapter](https://alova.js.org/tutorial/advanced/custom/http-adapter.md)
+- [Custom Storage Adapter](https://alova.js.org/tutorial/advanced/custom/storage-adapter.md)
+- [Custom Server Strategy Hook](https://alova.js.org/tutorial/advanced/custom/server-strategy.md)
 
 ## Custom Method Key
 
-Change cache, request sharing and state updating matching strategy by setting `key`. See [Custom Method Key](https://alova.js.org/tutorial/advanced/in-depth/custom-method-key).
+Change cache, request sharing and state updating matching strategy by setting `key`. See [Custom Method Key](https://alova.js.org/tutorial/advanced/in-depth/custom-method-key.md).
