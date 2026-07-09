@@ -8,7 +8,7 @@ Invoke this skill when working with:
 
 - worma configuration (`worma.config.js`, `.wormarc`)
 - API code generation from OpenAPI specs
-- `npx worma init` / `npx worma gen` CLI commands
+- `npx wormajs init` / `npx wormajs gen` CLI commands
 - worma plugins (platform, apifox, rename, tagModifier, aiDoc, etc.)
 - Template selection (alova, axios, fetch, ky, alovaGlobals, custom)
 - Migration from `@alova/wormhole` to worma
