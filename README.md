@@ -28,15 +28,24 @@ Guide for integrating alova with OpenAPI/Swagger specs via `@alova/wormhole`.
 npx skills add alovajs/skills --skill alova-wormhole-usage
 ```
 
+### worma-guidelines
+
+Worma is the re-designed and optimized evolution of `@alova/wormhole`, and it is recommended for new projects. These guidelines cover OpenAPI code generation, configuration, templates, plugins, CLI workflows, and migration guidance. Visit [worma official website](https://worma.js.org/) for more details.
+
+```bash
+npx skills add alovajs/skills --skill worma-guidelines
+```
+
 ### For AI Agent Users
 
 Skills are automatically triggered when:
 
-| Skill                | Trigger Keywords                                                                                |
-| -------------------- | ----------------------------------------------------------------------------------------------- |
-| alova-client-usage   | API requests, fetch data, alova client setup, `alova/client` imports, pagination, forms         |
-| alova-server-usage   | Server-side requests, BFF, API gateway, Node.js/Bun/Deno, `alova/server` imports, Redis caching |
-| alova-wormhole-usage | OpenAPI, Swagger, `@alova/wormhole`, API code generation, `alova gen`, `alova init`             |
+| Skill                | Trigger Keywords                                                                                                            |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| alova-client-usage   | API requests, fetch data, alova client setup, `alova/client` imports, pagination, forms                                     |
+| alova-server-usage   | Server-side requests, BFF, API gateway, Node.js/Bun/Deno, `alova/server` imports, Redis caching                             |
+| alova-wormhole-usage | OpenAPI, Swagger, `@alova/wormhole`, API code generation, `alova gen`, `alova init`                                         |
+| worma-guidelines     | worma config, OpenAPI/Swagger integration, CLI commands, templates, plugins, migration from `@alova/wormhole`, axios, or ky |
 
 ## License
 
