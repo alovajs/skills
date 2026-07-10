@@ -24,17 +24,20 @@ Use this skill for questions such as:
 | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | First time setup / install & configure | [Installation & Configuration](https://worma.js.org/llms.mdx/docs/guide/installation-config.md)                                                           |
 | Quick start                            | [Quick Start](https://worma.js.org/llms.mdx/docs/quick-start.md)                                                                                          |
-| Migrate from `@alova/wormhole`         | [From wormhole migration](https://worma.js.org/docs/migration/from-alova)                                                                                 |
 | Migrate from `axios`                   | [From Axios migration](https://worma.js.org/docs/migration/from-axios)                                                                                    |
 | Migrate from `ky`                      | [From Ky migration](https://worma.js.org/docs/migration/from-ky)                                                                                          |
 | CLI commands (`init`, `gen`, etc.)     | [CLI Commands](https://worma.js.org/llms.mdx/docs/cli-commands.md)                                                                                        |
 | Write custom Handlebars templates      | [Custom Templates](https://worma.js.org/docs/template-system/custom-templates)                                                                            |
 | Build your own plugin                  | [Custom Plugin](https://worma.js.org/llms.mdx/docs/plugin-system/custom-plugin.md) / [Plugin API](https://worma.js.org/llms.mdx/docs/api/plugin-api.md)   |
 | Programmatic API                       | [Core Functions](https://worma.js.org/llms.mdx/docs/api/core-functions.md) / [Configuration API](https://worma.js.org/llms.mdx/docs/api/configuration.md) |
-| Generate AI Skill docs                 | [AI Skills](https://worma.js.org/llms.mdx/docs/ai-skills/index.md)                                                                                        |
+| Generate AI Skill docs                 | [AI Skills](https://worma.js.org/llms.mdx/docs/ai-skills.md)                                                                                              |
 | VSCode extension                       | [Editor Docs](https://worma.js.org/llms.mdx/docs/guide/editor-docs.md)                                                                                    |
 | Monorepo setup                         | [Monorepo](https://worma.js.org/llms.mdx/docs/guide/monorepo.md)                                                                                          |
 | Performance tuning                     | [Performance](https://worma.js.org/llms.mdx/docs/performance.md)                                                                                          |
+
+## Migration Workflow from @alova/wormhole to worma
+
+→ [references/migration-wormhole.md](references/migration-wormhole.md)
 
 ## Predefined Templates
 
@@ -64,4 +67,4 @@ Add these plugins to `generator.plugins` to customize the generation pipeline.
 | `filterApi()`       | Filters APIs by URL or tag with matching rules.                      | [filterApi](https://worma.js.org/llms.mdx/docs/plugin-system/builtin-plugins/filter-api.md)             |
 | `importType()`      | Reuses external types and excludes auto-generated types.             | [importType](https://worma.js.org/llms.mdx/docs/plugin-system/builtin-plugins/import-type.md)           |
 
-→ See [Built-in Plugins Overview](https://worma.js.org/llms.mdx/docs/plugin-system/builtin-plugins/index.md) for shared usage patterns and more details.
+→ See [Built-in Plugins Overview](https://worma.js.org/llms.mdx/docs/plugin-system/custom-plugin.md) for shared usage patterns and more details.
